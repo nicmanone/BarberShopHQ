@@ -1,0 +1,11 @@
+development:
+  adapter: sqlite3
+  database: barbershop.db
+
+test:
+  adapter: sqlite3
+  database: barbershop_test.db
+
+production:
+  adapter: sqlite3
+  database: barbershop.db

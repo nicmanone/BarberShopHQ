@@ -12,4 +12,5 @@ end
 
 
 get '/' do
+  erb "Hello"
 end
