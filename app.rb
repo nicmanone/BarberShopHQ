@@ -47,4 +47,7 @@ get '/barber/:id' do
 end
 
 
-
+get '/bookings' do
+  @clients = Client.order "name DESC"
+  erb :bookings
+end
