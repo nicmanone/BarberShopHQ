@@ -3,29 +3,20 @@
 <form action="/visit" method="POST">
   <div class="form-group">
     <label for="exampleInputEmail1">Ваше имя</label>
-    <input name="username" type="text" class="form-control" id="exampleInputEmail1" value="<%= @username %>"  placeholder="Введите ваше имя">
+    <input name="client[name]" type="text" class="form-control" id="exampleInputEmail1" value=""  placeholder="Введите ваше имя">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Ваше телефон</label>
-    <input name="phone" type="text" class="form-control" id="exampleInputEmail1" value="<%= @phone %>" placeholder="Введите ваш телефон">
+    <input name="client[phone]" type="text" class="form-control" id="exampleInputEmail1" value="" placeholder="Введите ваш телефон">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Когда вас ждать?</label>
-    <input id="datetimepicker" type="text" name="usertime" class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Ваш паркмахер:?</label>
-    <select name="barber" class="form-control" aria-label="Пример выбора по умолчанию">
-      <option selected>Откройте это меню выбора</option>
-      <% @barbers.each do |barber_name| %>
-        <option <%= @barber == barber_name['name'] ? 'selected' : '' %>><%= barber_name['name'] %></option>
-      <% end %> 
-    </select>
+    <input id="datetimepicker" type="text" name="client[datastamp]" class="form-control">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">В какой цвет хотите себя окрасить?</label>
   </div>
-  <select id="color" name="color">
+  <select id="color" name="client[color]">
   <option value="#7bd148">Green</option>
   <option value="#5484ed">Bold blue</option>
   <option value="#a4bdfc">Blue</option>
