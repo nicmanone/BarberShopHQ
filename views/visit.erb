@@ -3,7 +3,7 @@
 <form action="/visit" method="POST">
   <div class="form-group">
     <label for="exampleInputEmail1">Ваше имя</label>
-    <input name="client[name]" type="text" class="form-control" id="exampleInputEmail1" value=""  placeholder="Введите ваше имя">
+    <input name="client[name]" type="text" class="form-control" id="exampleInputEmail1" value="<%= @c.name %>"  placeholder="Введите ваше имя">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Ваше телефон</label>
